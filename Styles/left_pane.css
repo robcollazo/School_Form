@@ -1,0 +1,7 @@
+.left-pane {
+  width: 50%;
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+  padding: 20px;
+  scrollbar-width: none;
+}

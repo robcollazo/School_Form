@@ -1,0 +1,107 @@
+.brand-light {
+  color: var(--brand-light);
+}
+
+.brand-mid {
+  color: var(--brand-mid);
+}
+
+.brand-dark {
+  color: var(--brand-dark);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-highlight {
+  color: var(--text-highlight);
+}
+
+.surface-primary {
+  color: var(--surface-primary);
+}
+
+.surface-secondary {
+  color: var(--surface-secondary);
+}
+
+.surface-disabled {
+  color: var(--surface-disabled);
+}
+
+.stroke-default {
+  color: var(--stroke-default);
+}
+
+.stroke-highlight {
+  color: var(--stroke-highlight);
+}
+
+.semantic-error {
+  color: var(--semantic-error);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.violet {
+  color: var(--violet);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.heading1 {
+  font: var(--heading1);
+}
+
+.heading2 {
+  font: var(--heading2);
+}
+
+.heading3 {
+  font: var(--heading3);
+}
+
+.heading4 {
+  font: var(--heading4);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.text-fill {
+  font: var(--text-fill);
+}
+
+.margin-8 {
+  margin-bottom: 8px;
+}
+
+.margin-32 {
+  margin-bottom: 32px;
+}
