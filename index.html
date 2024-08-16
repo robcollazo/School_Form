@@ -17,21 +17,59 @@
     <div class="container">
       <div class="left-pane">
         <div class="content">
-          <h2>Scrollable Left Pane</h2>
-          <p>Content that goes here will be scrollable.</p>
-          <p>More content to make the pane scrollable.</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
-          <p>Even more content...</p>
+          <div id="return">
+            <a href="#"><img src="./Assets/arrow-left-02.svg" alt="" /></a>
+            <a class="text-secondary" href="#"><span>Back</span></a>
+          </div>
+
+          <h2 class="margin-8">Enrollment Form</h2>
+          <p class="margin-48">
+            Fill in the details below to enroll your child in the Estrelas do
+            Amanhã early childhood education school.
+          </p>
+
+          <form action="submit">
+            <div id="main-info">
+              <h4 class="heading4 margin-24">Child's Information</h4>
+
+              <div class="form-field" id="full-name-field">
+                <label class="text-md" for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" />
+              </div>
+
+              <div class="form-field" id="birth-field">
+                <label class="text-md" for="birth">Date of Birth</label>
+                <input type="Date" name="birth" id="birth" />
+              </div>
+
+              <div class="form-field" id="gender-field">
+                <label class="text-md" for="gender">Genre</label>
+                <select name="gender" id="gender">
+                  <option value="">Choose a genre</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="N/A">I'd rather not to answer</option>
+                </select>
+              </div>
+
+              <div class="form-field" id="medical-field">
+                <label class="text-md" for="medical">Medical Information</label>
+                <textarea name="medical" id="medical"></textarea>
+              </div>
+
+              <div class="form-field" id="certificate-field">
+                <label class="text-md" for="certificate"
+                  >Birth Certificate</label
+                >
+                <input
+                  class="upload"
+                  type="file"
+                  name="certificate"
+                  id="certificate"
+                />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <div class="right-pane">

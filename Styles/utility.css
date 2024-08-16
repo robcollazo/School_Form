@@ -102,6 +102,20 @@
   margin-bottom: 8px;
 }
 
+.margin-24 {
+  margin-bottom: 24px;
+}
+
 .margin-32 {
   margin-bottom: 32px;
+}
+
+.margin-48 {
+  margin-bottom: 32px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
