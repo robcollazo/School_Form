@@ -14,78 +14,81 @@
     <title>School Form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="left-pane">
-        <div class="content">
-          <div id="return">
-            <a href="#"><img src="./Assets/arrow-left-02.svg" alt="" /></a>
-            <a class="text-secondary" href="#"><span>Back</span></a>
+    <div id="app">
+      <main>
+        <div class="main-container">
+          <div class="back">
+            <img src="./Assets/arrow-left-02.svg" alt="" />
+            <span>Back</span>
           </div>
 
-          <h2 class="margin-8">Enrollment Form</h2>
-          <p class="margin-48">
-            Fill in the details below to enroll your child in the Estrelas do
-            Amanhã early childhood education school.
+          <h1>Enrollment Form</h1>
+          <p>
+            Fill in the information below to enroll your child in the Estrelas
+            do Amanhã preschool.
           </p>
 
-          <form action="submit">
-            <div id="main-info">
-              <h4 class="heading4 margin-24">Child's Information</h4>
+          <form enctype="multipart/form-data" method="post">
+            <fieldset>
+              <legend>Child's Information</legend>
 
-              <div class="form-field" id="full-name-field">
-                <label class="text-md" for="full-name">Full Name</label>
-                <input type="text" name="full-name" id="full-name" />
+              <div class="input-wrapper">
+                <label for="fullname">Full Name</label>
+                <input id="fullname" type="text" name="fullname" />
               </div>
 
-              <div class="form-field" id="birth-field">
-                <label class="text-md" for="birth">Date of Birth</label>
-                <input type="Date" name="birth" id="birth" />
+              <div class="input-wrapper">
+                <label for="birth">Birthday</label>
+                <input id="birth" type="date" name="birth" lang="en-US" />
               </div>
 
-              <div class="form-field" id="gender-field">
-                <label class="text-md" for="gender">Genre</label>
+              <div class="select-wrapper">
+                <label for="gender">Gender</label>
                 <select name="gender" id="gender">
-                  <option value="">Choose a genre</option>
-                  <option value="Female">Female</option>
-                  <option value="Male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
                   <option value="N/A">I'd rather not to answer</option>
                 </select>
               </div>
 
-              <div class="form-field" id="medical-field">
-                <label class="text-md" for="medical">Medical Information</label>
-                <textarea name="medical" id="medical"></textarea>
+              <div class="textarea-wrapper">
+                <label for="medical-info">Medical Information</label>
+                <textarea
+                  name="medical-info"
+                  id="medical-info"
+                  cols="30"
+                  rows="10"
+                ></textarea>
               </div>
 
-              <div class="form-field" id="certificate-field">
-                <label class="text-md" for="certificate"
-                  >Birth Certificate</label
-                >
+              <div class="droparea-wrapper">
                 <input
-                  class="upload"
                   type="file"
-                  name="certificate"
-                  id="certificate"
+                  name="birth-certificate"
+                  id="birth-certificate"
                 />
+                <img src="./Assets/cloud-upload.svg" alt="" />
+                <p>
+                  Click Here <br />
+                  To select the file.
+                </p>
               </div>
-            </div>
+            </fieldset>
           </form>
         </div>
-      </div>
-      <div class="right-pane">
-        <div id="right-content">
-          <img class="margin-8" src="./Assets/logo.svg" alt="" />
-          <h2 class="heading1 margin-8">
-            Because every
-            <strong class="text-highlight">learning</strong> moment counts.
-          </h2>
-          <p class="text-fill margin-32">
-            Enroll your child in our school and watch them flourish in a
-            welcoming, safe, and stimulating environment.
+      </main>
+      <aside class="aside-container">
+        <header>
+          <img src="./Assets/logo.svg" alt="" />
+          <h2>Because every <strong>learning</strong> moment counts.</h2>
+          <p>
+            Enroll your child in our school and watch them flourish in a warm,
+            safe, and stimulating environment.
           </p>
-        </div>
+        </header>
+
         <img src="./Assets/Illustration.svg" alt="" />
-      </div>
+      </aside>
     </div>
   </body>
 </html>

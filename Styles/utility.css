@@ -90,12 +90,16 @@
   font: var(--heading4);
 }
 
-.text-md {
-  font: var(--text-md);
+.text-sm {
+  font: var(--text-sm);
 }
 
-.text-fill {
-  font: var(--text-fill);
+.text {
+  font: var(--text);
+}
+
+.margin-4 {
+  margin-bottom: 4px;
 }
 
 .margin-8 {
@@ -112,10 +116,4 @@
 
 .margin-48 {
   margin-bottom: 32px;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
 }
