@@ -29,7 +29,7 @@
           </p>
 
           <form enctype="multipart/form-data" method="post">
-            <fieldset>
+            <fieldset class="child-info">
               <legend>Child's Information</legend>
 
               <div class="input-wrapper">
@@ -97,6 +97,61 @@
                     Click Here <br />
                     To select the file.
                   </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="address-info">
+              <legend>Address Information</legend>
+
+              <div class="input-wrapper">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" name="zip-code" id="zip-code" />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street-name">Street Name</label>
+                  <input
+                    type="text"
+                    name="street-name"
+                    id="street-name"
+                    value="Street Name"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="street-number">Street Number</label>
+                  <input
+                    type="number"
+                    name="street-number"
+                    id="street-number"
+                  />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    name="City"
+                    id="City"
+                    value="City Name"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="state">State</label>
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    value="State Name"
+                    disabled
+                  />
                 </div>
               </div>
             </fieldset>
